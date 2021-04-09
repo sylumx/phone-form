@@ -114,7 +114,6 @@ function ongoing_click(clicked_id) {
         .then(function (data) {
             let selected = data;
             return selected.map(function (country) {
-                console.log(country.name);
                 let mainDiv = createNode('div');
                 let img = createNode('img');
                 let div = createNode('div');
@@ -135,6 +134,6 @@ function ongoing_click(clicked_id) {
             console.log(error);
         });
 }
-        // document.querySelector('#selectedOption').addEventListener('keyup', function (e) {
-        //     console.log(e.key)
-        // })
+document.querySelector('#selectedOption').addEventListener('keyup', function (e) {
+    console.log(e.key)
+})
